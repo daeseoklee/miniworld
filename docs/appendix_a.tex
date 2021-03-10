@@ -1,0 +1,105 @@
+\documentclass{amsart}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{bm}
+\usepackage[tocflat]{tocstyle}
+\usetocstyle{standard}
+% Theorem environments-------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+% simple commands---------------------------------------------
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\seq}[1]{\left<#1\right>}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+%additional-------------------------------------------------------
+\newtheorem{prob}{Problem}[]
+%------------------------------------------------------
+\begin{document}
+\title{experiments procedure}
+\author{Daeseok Lee}
+\maketitle
+%------------------------------------------------------
+\section{task-based experiments}
+As explaind in the main paper, these experiments are designed to see whether the creatures attained some specific patterns of behaviors that are appraently related to survival. The patterns are measured in the form of "task". For each task, creatures are provided with some specific circumstance in which some features of the world are set to "off" for controlling purpose, and sometimes they have to behave in an one-to-one context. The performance in either time, amount or distance is measured, and compared with a control group. The "control group" is obtained by applying the mixing input trick and giving them the same circumstance with the experimental group. Then if a siginificant different is observed between the perfomance of experimental and control groups, it could be argued that an adaptation has occured that enhance the chance of the specific behavioral pattern in input-dependent manner.
+\subsection{overall procedure}
+\begin{enumerate}
+\item Execute $n_{run}$ runs of the world with map size of $(x^i,y^i)$, $n^i_{population}$ initial population, $n^i_{species}$ initial species and $m^i$ total mass. During the runs at each $T_{sample}$ moment, randomly sample $\min(n_{sample},\text{population})$ genes from the gene pool, and keep the samples. 
+\item Each initial run is terminated at $T^i$ moment, or earlier if a complete extinction occurs.
+\item For each task, for each initial run, for each set of samples in the run, for $n_{iteration}$ times, 
+\begin{enumerate}
+\item Configure a testworld based on "offed features", "context" and the set of samples. If the "context" was "normal", then the same map size, intial number of population, initial total mass is used, and the sampled genes are provided to the population  with at most one difference in number. Otherwise, if the "context" was "one-to-one", map size of $(x^t,y^t)$ and $m^t$ initial total mass is used. In this case, there's one "subject" and one "object" creature, where the "subject" is the subject of the behavior to measure and the "object" is fixed in a position and object of the behavior to measure. Both of them have gene chosen among the set of samples.  
+\item Run the testworld until the "terminating criteron" is met. If "terminating criterion" is "time limit", then it means to terminate when either moment $T^t$ is ahieved or a complete extinction occured. 
+\item Measure the performance based on "performance measure". 
+\end{enumerate}
+\end{enumerate}
+\subsection{food consumption}
+\begin{itemize}
+\item offed features : aging, birth, death by lack of energy, excretion, hunting
+\item context : normal
+\item terminating criterion : only 10 percent of the total mass is remaining as food. 
+\item performance measure : moment spent
+\end{itemize}
+
+\subsection{intercourse inclination}
+\begin{itemize}
+\item offed features : aging, birth, death by lack of energy, hunting 
+\item context : normal
+\item terminating criterion : time limit
+\item performance measure : number of times sexual intercourse has occured 
+\end{itemize}
+
+\subsection{offspring spreading}
+\begin{itemize}
+\item offed features : nothing 
+\item context : normal 
+\item terminating criterion : time limit 
+\item performance measure : total number of population existed until the termination 
+\end{itemize}
+
+\subsection{hunting}
+\begin{itemize}
+\item offed features : aging, birth, eating food, death by lack of energy, excretion 
+\item context : one-to-one
+\item terminating criterion : When the subject hunts the object.
+\item performance measure : Total distance that the subject has traveled.
+\item specific info : subject and object have size $s_{hunt}$ and $o_{hunt}$ respectively .
+\end{itemize}
+
+\subsection{raping}
+\begin{itemize}
+\item offed features : aging, birth, eating food, death by lack of energy, excretion, hunting
+\item context : one-to-one
+\item terminating criterion : When the subject tries sexual intercourse against the object for $t_{rape}$ times.
+\item performance measure : Total distance that the subject has traveled.
+\item specific info : subject ad object have size $s_{hunt}$ and $o_{hunt}$ respectively. 
+\end{itemize}
+
+\subsection{choice of parameters}
+These are choices made by authors.
+\begin{itemize}
+\item $n_{run}$ :
+\item $(x^i,y^i)$ :
+\item $n^i_{population},n^i_{species},m^i$ :
+\item $T_{sample},n_{sample}$ :
+\item $T^i$ :
+\item $n_{iteration}$ :
+\item $(x^t,y^t)$ :
+\item $m^t$ :
+\item $T^t$ : 
+\item $t_{hunt},s_{hunt},o_{hunt}$ : 
+\item $t_{rape},s_{rape},o_{rape}$ :
+\end{itemize} 
+\section{harsh environment experiments}
+
+
+%------------------------------------------------------
+\end{document}
+
+

@@ -1,0 +1,11 @@
+
+cpdef double uniform()
+cpdef int randint(int n,int m)
+cpdef int randint_with_probs(int n,int m,double[:] probs)
+cpdef bint randbool()
+cpdef double[:] multiple_uniform(int n)
+cpdef double gaussian()
+cpdef double[:] multiple_gaussian(int n)
+cpdef void seed()
+cpdef void fix_seed()
+cdef void assign_random_gaussian_pair(double[:] out, int assign_ix)

@@ -1,0 +1,171 @@
+\documentclass{amsart}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{bm}
+% Theorem environments-------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+% simple commands---------------------------------------------
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\seq}[1]{\left<#1\right>}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+%additional-------------------------------------------------------
+\newtheorem{prob}{Problem}[]
+%------------------------------------------------------
+\begin{document}
+\title{miniworld core 0.2.0}
+\date{\today}
+\author{Daeseok Lee}
+\begin{abstract}
+This is do
+\end{abstract}
+\maketitle
+%------------------------------------------------------
+\section{introduction}
+\subsection{miniworld project}
+
+
+\subsection{miniworld core} 
+
+
+\subsection{version information} 
+\subsubsection{version 0.2.0}
+
+
+%------------------------------------------------------
+\section{ecosystem outline}
+\subsection{terminology}
+
+
+\subsection{outline}
+
+
+\subsection{life cycle} 
+
+
+\subsection{action}
+
+
+\subsection{mineral dynamics}
+
+
+\subsection{reproduction}  
+
+%------------------------------------------------------
+\section{free parameters}
+\subsection{initial configuration}
+
+\subsection{life cycle}
+
+\subsection{action}
+
+\subsection{mineral dynamics}
+
+\subsection{reproduction}
+
+%------------------------------------------------------
+\section{public API}
+
+\subsection{free parameter manipulation}
+
+\subsection{neural network manipulation}
+
+\subsection{world generation} 
+
+\subsection{execution} 
+
+\subsection{measurement}
+
+\subsection{visualization helper}
+
+
+
+%----------------------------------------------
+\section{ecosystem detail} 
+\subsection{life cycle}
+
+\subsection{action}
+
+\subsection{mineral dynamics}
+
+\subsection{reproduction}
+%------------------------------------------------------
+\section{example simulation}
+
+\end{document}
+
+
+
+
+
+
+
+===============================================================
+\documentclass[a4paper,11pt]{article}
+\usepackage{graphicx,fancyhdr,amsmath,amssymb,amsthm,subfig,url,hyperref}
+\usepackage{dhucs}
+\usepackage[margin=1in]{geometry}
+%-----------------------------------
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\seq}[1]{\left<#1\right>}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+%----------------------- Macros and Definitions--------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{pro}{Problem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+
+
+
+%%% FILL THIS OUT
+\newcommand{\studentname}{�̴뼮}
+\newcommand{\idnumber}{20170450}
+% You should write your "Student ID number" and your name here.
+% You can write your name in Korean.
+\newcommand{\exerciseset}{Assignment 7}
+% If it is jth homework, then substitute n by j.
+%%% END
+
+\renewcommand{\theenumi}{\bf \Alph{enumi}}
+
+\fancypagestyle{plain}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO,RE]{\sffamily\bfseries\large MAS478 Discrete Geometry}
+\fancyhead[RO,LE]{\sffamily\bfseries\large \idnumber:  \studentname}
+\fancyfoot[RO,LE]{\sffamily\bfseries\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\graphicspath{{figures/}}
+
+%-------------------------------- Title ----------------------------------
+
+\title{MAS478 \exerciseset}
+\author{\studentname \qquad ID: \idnumber}
+\date{}
+
+%--------------------------------- Text ----------------------------------
+
+\begin{document}
+\maketitle

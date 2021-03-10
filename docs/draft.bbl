@@ -1,0 +1,26 @@
+\begin{thebibliography}{EDS00}
+
+\bibitem[EDS00]{jeremy}
+Jeremy~S Eccles, Julie~A Dickerson, and Junqing Shao.
+\newblock Evolving a virtual ecosystem with genetic algorithms.
+\newblock In {\em Proceedings of the 2000 Congress on Evolutionary Computation.
+  CEC00 (Cat. No. 00TH8512)}, volume~1, pages 753--760. IEEE, 2000.
+
+\bibitem[Lee03]{lee}
+Malrey Lee.
+\newblock Evolution of behaviors in autonomous robot using artificial neural
+  network and genetic algorithm.
+\newblock {\em Information Sciences}, 155(1-2):43--60, 2003.
+
+\bibitem[Sim94]{sims}
+Karl Sims.
+\newblock Evolving virtual creatures.
+\newblock In {\em Proceedings of the 21st annual conference on Computer
+  graphics and interactive techniques}, pages 15--22. ACM, 1994.
+
+\bibitem[SP94]{ga_survey}
+Mandavilli Srinivas and Lalit~M Patnaik.
+\newblock Genetic algorithms: A survey.
+\newblock {\em computer}, 27(6):17--26, 1994.
+
+\end{thebibliography}

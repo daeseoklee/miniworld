@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{outline}{3}{0}{1}
+\beamer@sectionintoc {2}{adaptation of traits}{5}{0}{2}
+\beamer@sectionintoc {3}{mixing input trick}{13}{0}{3}
+\beamer@sectionintoc {4}{experiments}{21}{0}{4}
