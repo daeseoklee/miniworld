@@ -1,4 +1,4 @@
-\documentclass{amsart}
+\documentclass{article}
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{bm}
 \usepackage{graphicx}
@@ -7,9 +7,9 @@
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
-\theoremstyle{definition}
+
 \newtheorem{defn}[thm]{Definition}
-\theoremstyle{remark}
+
 \newtheorem{rem}[thm]{Remark}
 \numberwithin{equation}{section}
 % simple commands---------------------------------------------
@@ -18,12 +18,13 @@
 \newcommand{\seq}[1]{\left<#1\right>}
 \newcommand{\norm}[1]{\left\Vert#1\right\Vert}
 %additional-------------------------------------------------------
-\newtheorem{prob}{Problem}[]
+
 %------------------------------------------------------
 \begin{document}
-\title{natural evolution of behaviors in a virtual ecosystem and its validation}
-\date{\today}
-\author{Daeseok Lee}
+\title{Natural Evolution of Behaviors in a Virtual Ecosystem and Its Validation}
+\date{December 27, 2019}
+\author{Daeseok Lee\thanks{KAIST, Dept. of Mathematical Sciences} \and Jehun Hong\thanks{Seoul National University, Dept. of Oriental Painting (Research Intern at KAIST Behavioral Genetics Lab)}}
+\maketitle
 \begin{abstract}
 	We developed a simple 2d virtual ecosystem which have many aspects of real-world lives in their simplified form. In particular, the virtual creatures in the ecosystem have neural networks that relate their visual input to their action. Several different traits including the weight parameters of the neural networks are encoded as genotype. The evolution is not guided by some given  artificial criteria as in some other systems, but death conditions such as lack of energy or being captured by a predator naturally lead to the natural selection.   
 	By measuring the performance of the gene pool at different time intervals with respect to some given tasks, we argue that our creatures were able to develop configuration of the neural networks that produce actions that better fit to their input by triggering eating and mating behaviors when they are actually needed. 
@@ -35,7 +36,7 @@
    
 	
 \end{abstract}
-\maketitle
+
 %------------------------------------------------------
 
 \section{introduction}
@@ -217,7 +218,6 @@ number of descendants&0&1$\sim$371&372$\sim$134135&134136$\sim$\\
 frequency&154464&92508&0&47877
 \end{tabular}
 \end{table}
-
 Only about 16\% of the population turned out to have permanent influence on the gene pool, which shows there is a substantial amount of selective pressure. The population that have bounded number of descendents and that have permanent effect on the gene pool are analyzed in more detail in the following figures. The first figure show that among the permanent influencers, the influence slmost precisely depend on the time they were born, which shows their genes quickly became a part of the entire population. The second one shows that most of those failed to become a permanent influencer could not go through the 40 descendants barrier.
 \begin{center}
 \includegraphics[scale=0.3]{images/detail.png}
